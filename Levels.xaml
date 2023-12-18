@@ -1,0 +1,30 @@
+﻿<Page x:Class="finalKursach.Levels"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:finalKursach"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="Levels">
+    
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="\images\levels2.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Button Style="{DynamicResource RoundCorners}" FontSize="24" FontFamily="Candara Light"  Content="To main menu" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20" Height="80" Width="200" Click="Button_Click_1">
+        </Button>
+        <Button Style="{DynamicResource RoundCorners}" FontSize="24" FontFamily="Candara Light"  Content="Exit" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="20" Height="80" Width="200" Click="Button_Click_2">
+        </Button>
+        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100" Orientation="Horizontal">
+            <Button Style="{DynamicResource RoundCorners}" Margin="100" Content="Level 1" Width="200" Height="100" FontSize="48" FontFamily="Candara Light"   Click="Button_Click">
+            </Button>
+            <Button Style="{DynamicResource RoundCorners}"  Margin="100" Content="Level 2" Width="200" Height="100" FontSize="48" FontFamily="Candara Light"   Click="Button_Click_3">
+            </Button>
+            <Button Style="{DynamicResource RoundCorners}"  Margin="100" Content="Level 3" Width="200" Height="100" FontSize="48" FontFamily="Candara Light"   Click="Button_Click_3">
+            </Button>
+        </StackPanel>
+        <Frame x:Name="Level"/>
+    </Grid>
+</Page>

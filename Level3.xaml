@@ -1,0 +1,46 @@
+﻿<Page x:Class="finalKursach.Level3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:finalKursach"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="Level1">
+    <Grid>
+        <Canvas x:Name="CanvasLayout">
+            <Canvas.Background>
+                <ImageBrush ImageSource="\images\levelss.jpg" Stretch="UniformToFill"/>
+            </Canvas.Background>
+            <StackPanel Canvas.Right="20" Canvas.Top="100">
+                <Button Style="{DynamicResource RoundCorners}" FontSize="24" FontFamily="Candara Light"  Content="To levels" Margin="20" Height="80" Width="160" Click="Button_Click">
+                </Button>
+                <Button Style="{DynamicResource RoundCorners}" FontSize="24" FontFamily="Candara Light"  Content="Rules"  Margin="20" Height="80" Width="160" Click="Button_Click_2">
+                </Button>
+                <Button Style="{DynamicResource RoundCorners}" FontSize="24" FontFamily="Candara Light"  Content="Exit"  Margin="20" Height="80" Width="160" Click="Button_Click_3">
+                </Button>
+                <Button Style="{DynamicResource RoundCorners}" FontSize="24" FontFamily="Candara Light"  Content="Restart"  Margin="20" Height="80" Width="160" Click="Button_Click_1">
+                </Button>
+            </StackPanel>
+            <Grid x:Name="Tasks" Height="300" Width="200" Margin="20 80">
+                <Grid.Background>
+                    <SolidColorBrush Color="#E869AD" Opacity="0.7"></SolidColorBrush>
+                </Grid.Background>
+                <TextBlock Text="Score:" FontSize="24" TextAlignment="Left" Margin="10,10,10,257"/>
+                <TextBlock x:Name="ScoreText" Text="" FontSize="24" TextAlignment="Left" Margin="78,10,10,257"/>
+                <TextBlock Text="Time:" FontSize="24" Margin="10,33,10,234"/>
+                <TextBlock Text="Steps left:" FontSize="24" Margin="10,59,77,213"/>
+                <TextBlock x:Name="TimeText" Text="" FontSize="24" Margin="72,33,0,234"/>
+                <TextBlock x:Name="StepsText" Text="25" FontSize="24" Canvas.Left="143" Canvas.Top="100" Margin="121,59,0,208"/>
+                <TextBlock Text="Tasks" FontSize="24" Margin="67,119,5,148"/>
+                <TextBlock x:Name="BlueTask" Text="Blue left: 29" FontSize="24" TextAlignment="Left" Margin="10,156,25,104"/>
+            </Grid>
+            <Grid x:Name="GridLayout" Canvas.Top="80" Canvas.Left="260"/>
+
+        </Canvas>
+        <Frame x:Name="Level33" NavigationUIVisibility="Hidden" Panel.ZIndex="1"/>
+
+
+    </Grid>
+
+</Page>
